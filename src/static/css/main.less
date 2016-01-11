@@ -1,0 +1,91 @@
+/* ==========================================================================
+   tax-time-saving
+   ========================================================================== */
+
+// This is your project's main Less file.
+// Project-specific Less rules go after the imports.
+
+// Import Capital Framework.
+@import (less) "cf-grid.less";
+@import (less) "cf-typography.less";
+@import (less) "cf-layout.less";
+@import (less) "cf-core.less";
+@import (less) "cf-icons.less";
+
+// Import the brand color palette.
+@import (less) "brand-palette.less";
+
+// Uncomment to import Avenir font on CFPB projects.
+// If this project is on a non-CFPB domain,
+// use this file as a template for adding web fonts.
+@import (less) 'licensed-fonts.css';
+
+// Override the Capital Framework theme variables with colors from the brand color palette.
+@import (less) "cf-theme-overrides.less";
+
+// Import the Capital Framework enhancements
+@import (less) "cf-enhancements.less";
+
+// import CFPB nemo theme header and footer styles
+.nemo {
+    @import (less) "../../../node_modules/cfgov-sheer-templates/static/css/nemo.less";
+    // and a shim to override some things
+    @import (less) "../../../node_modules/cfgov-sheer-templates/static/css/nemo-shim.less";
+}
+
+// Things that don't play nice with Nemo
+// @TODO: Remove the following rules when Nemo bridge code goes away
+
+.content_bar {
+  display: none;
+}
+
+
+/* Project rules
+   ========================================================================== */
+
+.hero {
+    background-color: @green-60;
+}
+
+// About us box
+.about-us {
+    .grid_nested-col-group();
+
+    &_copy {
+        .short-desc();
+
+
+        .respond-to-min(@bp-sm-min, {
+            .grid_column(7, 12);
+
+            p {
+                margin-bottom: 0;
+            }
+        });
+
+        .respond-to-min(801px, {
+            font-size: unit(18px / @base-font-size-px, em);
+        });
+    }
+
+    &_social {
+        .respond-to-min(@bp-sm-min, {
+            .grid_column(4, 12, 1);
+        });
+    }
+}
+
+// Share icon styles (borrowed from cfgov-refresh)
+.share-icon {
+    color: @dark-gray;
+    font-size: unit(26px / @base-font-size-px, em);
+    line-height: 1;
+    .u-link__colors(@dark-gray, @pacific);
+    .u-link__no-border();
+
+    &__large {
+        // 35px creates a 30px square icon.
+        font-size: unit(35px / @base-font-size-px, em);
+    }
+}
