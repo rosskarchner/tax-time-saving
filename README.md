@@ -2,39 +2,38 @@
 
 Landing page for tax refund insert campaign that encourages people to save their refund.
 
-![Screenshot](screenshot.png)
 
 ## Dependencies
 
 - [Grunt](http://gruntjs.com): task runner for pulling in assets,
   linting and concatenating code, etc.
-- [Bower](http://bower.io): Package manager for front-end dependencies.
 - [Less](http://lesscss.org): CSS pre-processor.
-- [Capital Framework](https://cfpb.github.io/capital-framework/getting-started):
+- [Capital Framework](https://github.com/cfpb/capital-framework):
   User interface pattern-library produced by the CFPB.
+- [Sheer](https://github.com/cfpb/sheer):
+  server that interprets the Jinja2 templates.
 
-**NOTE:** If you're new to Capital Framework, we encourage you to
-[start here](https://cfpb.github.io/capital-framework/getting-started).
 
 ## Installation
 
 1. Install [Node.js](http://nodejs.org) however you'd like.
-2. Install [Grunt](http://gruntjs.com) and [Bower](http://bower.io):
-  ```bash
-  npm install -g grunt-cli bower
-  ```
+2. Install [Grunt](http://gruntjs.com):
+
+   ```bash
+   npm install -g grunt-cli bower
+   ```
 3. Next, install the dependencies and compile the project with:
-  ```bash
-  ./setup.sh
-  ```
-  __NOTE:__ To re-install and rebuild all the site’s assets run
-  `./setup.sh` again. See the [usage](#usage) section on updating all the
-  project dependencies.
 
-## Configuration
+   ```bash
+   ./setup.sh
+   ```
 
-_If the software is configurable, describe it in detail,
-either here or in other documentation to which you link._
+   __NOTE:__ To re-install and rebuild all the site’s assets run
+   `./setup.sh` again. See the [usage](#usage) section on updating all the
+   project dependencies.
+4. Install [Sheer](https://github.com/cfpb/sheer) by following the instructions
+   in its README.
+
 
 ## Usage
 
@@ -63,24 +62,19 @@ grunt watch:js
 grunt watch:cssjs
 ```
 
+
 ## How to test the software
 
 After running `./setup.sh` or compiling with Grunt,
-you can view the site in a browser by opening `/dist/index.html`.
-Alternatively, you may want to use a local server with something like
-`python -m SimpleHTTPServer`.
+`cd` into `/dist` and run `sheer serve --debug`.
+After it starts, visit <http://localhost:7000/> in your browser to see the site.
 
-## Known issues
-
-_Document any known significant shortcomings with the software._
 
 ## Getting help
 
-_Instruct users how to get help with this software; this might include links
-to an issue tracker, wiki, mailing list, etc._
-
 Use the issue tracker to follow the development conversation.
 If you find a bug not listed in the issue tracker, please file a bug report.
+
 
 ## Getting involved
 
@@ -89,7 +83,7 @@ We welcome your feedback and contributions. See the
 for more details.
 
 Additionally, you may want to consider
-[contributing to the Capital Framework](https://cfpb.github.io/capital-framework/contributing/),
+[contributing to the Capital Framework](https://github.com/cfpb/capital-framework/#contributing),
 which is the front-end pattern library used in this project.
 
 
@@ -99,13 +93,3 @@ which is the front-end pattern library used in this project.
 1. [TERMS](TERMS.md)
 2. [LICENSE](LICENSE)
 3. [CFPB Source Code Policy](https://github.com/cfpb/source-code-policy/)
-
-
-----
-
-## Credits and references
-
-1. Projects that inspired you
-2. Related projects
-3. Books, papers, talks, or other sources that have meaniginful impact or
-   influence on this project
