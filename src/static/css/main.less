@@ -26,6 +26,9 @@
 // Import the Capital Framework enhancements
 @import (less) "cf-enhancements.less";
 
+// Import stuff borrowed from cfgov-refresh
+@import (less) "image-text-25-75.less";
+
 // import CFPB nemo theme header and footer styles
 .nemo {
     @import (less) "../../../node_modules/cfgov-sheer-templates/static/css/nemo.less";
@@ -46,34 +49,6 @@
 
 .hero {
     background-color: @green-60;
-}
-
-// About us box
-.about-us {
-    .grid_nested-col-group();
-
-    &_copy {
-        .short-desc();
-
-
-        .respond-to-min(@bp-sm-min, {
-            .grid_column(7, 12);
-
-            p {
-                margin-bottom: 0;
-            }
-        });
-
-        .respond-to-min(801px, {
-            font-size: unit(18px / @base-font-size-px, em);
-        });
-    }
-
-    &_social {
-        .respond-to-min(@bp-sm-min, {
-            .grid_column(4, 12, 1);
-        });
-    }
 }
 
 // Share icon styles (borrowed from cfgov-refresh)
