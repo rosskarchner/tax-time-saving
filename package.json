@@ -1,6 +1,6 @@
 {
   "name": "tax-time-saving",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Landing page for tax refund insert campaign that encourages people to save their refund.",
   "homepage": "http://www.consumerfinance.gov/tax-time-saving/",
   "author": {
@@ -20,8 +20,8 @@
     "cfgov-sheer-templates": "~1.0.0",
     "cf-grid": "^3.1.0",
     "cf-typography": "^3.0.3",
-    "cf-layout": "^3.0.3",
-    "cf-core": "^3.1.0",
+    "cf-layout": "^3.0.5",
+    "cf-core": "^3.1.2",
     "cf-icons": "^3.0.3",
     "html5shiv": "latest",
     "jquery": "^1.12.0"
