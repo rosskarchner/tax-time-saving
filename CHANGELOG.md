@@ -2,7 +2,14 @@ All notable changes to this project will be documented in this file.
 We follow the [Semantic Versioning 2.0.0](http://semver.org/) format.
 
 
-## 1.0.1 - 2016-02-03
+## 1.0.2 - 2016-02-10
+
+### Changed
+- Updated cf-core to 3.1.2
+- Updated cf-layout to 3.0.5
+
+
+## 1.0.1 - 2016-02-09
 
 ### Changed
 - Updated hero copy
