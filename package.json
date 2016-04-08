@@ -17,7 +17,7 @@
     "tax-time-saving"
   ],
   "dependencies": {
-    "cfgov-sheer-templates": "~1.0.0",
+    "cfgov-sheer-templates": "2.0.1",
     "cf-grid": "^3.1.0",
     "cf-typography": "^3.0.3",
     "cf-layout": "^3.0.5",

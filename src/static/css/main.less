@@ -29,12 +29,9 @@
 // Import stuff borrowed from cfgov-refresh
 @import (less) "image-text-25-75.less";
 
-// import CFPB nemo theme header and footer styles
-.nemo {
-    @import (less) "../../../node_modules/cfgov-sheer-templates/static/css/nemo.less";
-    // and a shim to override some things
-    @import (less) "../../../node_modules/cfgov-sheer-templates/static/css/nemo-shim.less";
-}
+// import cfgov-refresh header and footer styles
+@import (inline) "../../../node_modules/cfgov-sheer-templates/static/css/header.css";
+@import (inline) "../../../node_modules/cfgov-sheer-templates/static/css/footer.css";
 
 // Things that don't play nice with Nemo
 // @TODO: Remove the following rules when Nemo bridge code goes away
