@@ -2,6 +2,12 @@ All notable changes to this project will be documented in this file.
 We follow the [Semantic Versioning 2.0.0](http://semver.org/) format.
 
 
+## 2.0.0 - 2016-04-08
+
+### Changed
+- Changed to cfgov-refresh header and footer
+
+
 ## 1.0.3 - 2016-03-04
 
 ### Changed
