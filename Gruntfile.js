@@ -237,6 +237,8 @@ module.exports = function(grunt) {
             src: [
               // Template files
               "_*/*",
+              // Head scripts
+              "static/js/*"
             ],
             dest: '<%= loc.dist %>'
           }
