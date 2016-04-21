@@ -2,6 +2,13 @@ All notable changes to this project will be documented in this file.
 We follow the [Semantic Versioning 2.0.0](http://semver.org/) format.
 
 
+## 2.0.1 - 2016-04-21
+
+### Changed
+- Update cfgov-sheer-templates to get skip link styles and mega menu fix,
+  among other things
+
+
 ## 2.0.0 - 2016-04-08
 
 ### Changed
