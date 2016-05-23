@@ -2,6 +2,10 @@ All notable changes to this project will be documented in this file.
 We follow the [Semantic Versioning 2.0.0](http://semver.org/) format.
 
 
+## 2.0.2 - 2016-05-23
+- Updated cfgov-sheer-templates dependency to get updated header JavaScript.
+
+
 ## 2.0.1 - 2016-04-21
 
 ### Changed
