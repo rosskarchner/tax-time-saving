@@ -1,9 +1,14 @@
 All notable changes to this project will be documented in this file.
 We follow the [Semantic Versioning 2.0.0](http://semver.org/) format.
 
+## 2.1.1 - 2016-05-24
+### Changed
+- Update Gruntfile template path.
 
-## 2.0.2 - 2016-05-23
+
+## 2.1.0 - 2016-05-23
 - Updated cfgov-sheer-templates dependency to get updated header JavaScript.
+- Updated cfgov-sheer-templates to get print styles.
 
 
 ## 2.0.1 - 2016-04-21
